@@ -1,0 +1,31 @@
+# Environment & secrets
+.env
+*.json
+!preferences.yaml
+
+# Database
+data/
+data/jobs.db
+*.db
+
+# Logs
+logs/
+logs/*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Playwright
+playwright-browsers/

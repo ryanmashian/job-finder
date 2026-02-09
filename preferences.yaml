@@ -1,0 +1,186 @@
+# preferences.yaml — Job Search Configuration
+# Edit this file to adjust your search criteria without touching code.
+
+candidate:
+  name: "Ryan Mashian"
+  resume_file: "resume.txt"
+  email: "ryanmash28@gmail.com"
+
+target_roles:
+  - "Business Operations"
+  - "Biz Ops"
+  - "Operations Associate"
+  - "Operations Analyst"
+  - "Chief of Staff"
+  - "Strategy & Operations"
+  - "Strategy and Operations"
+  - "Growth Operations"
+  - "Revenue Operations"
+  - "RevOps"
+  - "Operations Manager"
+  - "General Business Associate"
+  - "Startup Operations"
+  - "GTM Operations"
+  - "Finance & Operations"
+  - "Finance and Operations"
+
+locations:
+  los_angeles:
+    aliases:
+      - "Los Angeles"
+      - "LA"
+      - "Beverly Hills"
+      - "Santa Monica"
+      - "West Hollywood"
+      - "Culver City"
+      - "Venice"
+      - "Playa Vista"
+      - "El Segundo"
+      - "Marina del Rey"
+  san_francisco:
+    aliases:
+      - "San Francisco"
+      - "SF"
+      - "Bay Area"
+      - "Oakland"
+      - "San Jose"
+      - "Palo Alto"
+      - "Mountain View"
+      - "Menlo Park"
+      - "Sunnyvale"
+      - "South Bay"
+      - "East Bay"
+      - "Redwood City"
+      - "Berkeley"
+      - "Fremont"
+  new_york:
+    aliases:
+      - "New York"
+      - "NYC"
+      - "Manhattan"
+      - "Brooklyn"
+      - "New York City"
+      - "New York, NY"
+
+filters:
+  experience_max_years: 3
+  salary_min: 70000
+  excluded_industries:
+    - "healthcare"
+    - "healthtech"
+    - "health tech"
+    - "biotech"
+    - "biotechnology"
+    - "medical"
+    - "pharmaceutical"
+    - "pharma"
+    - "clinical"
+    - "hospital"
+    - "patient"
+    - "HIPAA"
+  remote_allowed: false
+
+positive_signals:
+  tools:
+    - "Excel"
+    - "Google Sheets"
+    - "Notion"
+    - "Python"
+    - "Zapier"
+    - "n8n"
+    - "automation"
+    - "financial model"
+    - "forecasting"
+    - "SQL"
+    - "Tableau"
+    - "Looker"
+  themes:
+    - "cross-functional"
+    - "data-driven"
+    - "fast-paced"
+    - "early-stage"
+    - "high-growth"
+    - "startup"
+    - "founder"
+    - "series a"
+    - "series b"
+    - "seed"
+  responsibilities:
+    - "financial modeling"
+    - "process improvement"
+    - "automation"
+    - "KPI"
+    - "metrics"
+    - "working with founders"
+    - "working directly with"
+    - "board"
+    - "investor"
+    - "pitch"
+    - "GTM"
+    - "go-to-market"
+
+notable_vcs:
+  tier_1:
+    - "Sequoia"
+    - "Andreessen Horowitz"
+    - "a16z"
+    - "Benchmark"
+    - "Accel"
+    - "Greylock"
+    - "Founders Fund"
+    - "Kleiner Perkins"
+    - "Index Ventures"
+    - "Lightspeed"
+    - "General Catalyst"
+  tier_2:
+    - "Bessemer"
+    - "NEA"
+    - "Insight Partners"
+    - "Tiger Global"
+    - "Coatue"
+    - "Thrive Capital"
+    - "Ribbit Capital"
+    - "Craft Ventures"
+    - "First Round Capital"
+    - "Union Square Ventures"
+    - "Y Combinator"
+    - "YC"
+
+scoring:
+  vc_bonus: 0.5
+  repost_flag: true
+  freshness_thresholds:
+    green_days: 7
+    yellow_days: 14
+    red_days: 21
+
+rate_limiting:
+  wellfound:
+    delay_min: 2.0
+    delay_max: 4.0
+    max_pages: 50
+    max_retries: 3
+  builtin:
+    delay_min: 2.0
+    delay_max: 4.0
+    max_pages: 30
+    max_retries: 3
+  yc:
+    delay_min: 1.0
+    delay_max: 2.0
+    max_pages: 30
+    max_retries: 3
+  startups_gallery:
+    delay_min: 2.0
+    delay_max: 3.0
+    max_pages: 20
+    max_retries: 3
+
+schedule:
+  cron: "0 7 * * *"
+  timezone: "America/Los_Angeles"
+
+listing_health:
+  max_checks_per_run: 50
+  recheck_interval_days: 3
+  request_delay: 1.5

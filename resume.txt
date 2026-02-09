@@ -1,0 +1,42 @@
+Ryan Mashian
+Beverly Hills, CA, 90210 | (310) 299-6917 | ryanmash28@gmail.com | www.linkedin.com/in/ryanmashian/
+
+EDUCATION
+University of Southern California – Marshall School of Business / Leventhal School of Accounting, May 2025
+Bachelor of Science in Finance and Accounting, GPA: 3.5/4.0
+Relevant Coursework: Business Finance, Financial Valuation, Financial Statement Analysis, Entrepreneurial Finance, Business Operations Management, Strategic Management, Business Analytics, Applied Statistics, Micro/Macroeconomics
+
+Harvard Westlake, Los Angeles, CA, May 2021
+Activities: HW Boxing Club (President), Varsity Fencing (Captain)
+
+EXPERIENCE
+Misfit Startup Incubator, Los Angeles, CA
+Junior Analyst, April 2024 – August 2024
+- Built a sprint workflow and portfolio tracking system in Notion to monitor 11 companies, increasing team throughput 220% in 90 days and improving visibility into milestones, blockers, and cross-team dependencies
+- Led GTM and investor-narrative workshops; advised founders on market sizing, KPI selection, and pitch positioning.
+- Reviewed and provided feedback on founder pitch decks, advising on design, narrative flow, and content structure; founders incorporated feedback to strengthen presentations for investor presentations.
+
+TYLT Ventures, Los Angeles, CA
+Summer Analyst, June 2023 – October 2023
+- Supported a nine-figure exit of a consumer electronics brand by building the virtual data room and synthesizing financial and operational data for buyer due diligence.
+- Built financial models, market analyses, and diligence materials supporting multiple Investment Committee evaluations.
+- Drafted the initial term sheet for a $2.5M Series C venture debt deal, analyzing collateral coverage, repayment scenarios, and risk.
+- Led the full evaluation of a CPG startup, including sourcing, outreach, competitive analysis, financial modeling, and IC materials.
+
+PROJECTS
+Selected AI & Automation Work
+- Built and deployed a quantitative trading system that scans Kalshi prediction markets for mispriced sports parlays by integrating real time odds from 10+ sportsbooks to calculate consensus probabilities and identify pricing inefficiencies; implemented Kelly Criterion for optimal position sizing and automated Telegram alerts for time-sensitive execution.
+- Built an automation workflow using OpenAI + n8n to generate competitive summaries and extract key data points from articles and reports, streamlining research for investment analysis.
+
+LEADERSHIP
+Sigma Alpha Mu Fraternity, Los Angeles, CA
+Social Chairman and Rush Committee, Mu Theta Chapter, September 2023 – May 2024
+- Oversaw a $500,000 annual budget, managing allocations, expenses, and vendor contracts.
+- Managed a $35,000 recruitment budget and executed events that onboarded 75 new members, generating $200,000 in ARR.
+
+SKILLS & INTERESTS
+Financial: Financial Modeling, Forecasting, KPI Analysis, Scenario Planning, Market Research
+Tools: Excel (Advanced), Google Sheets, PowerPoint, Notion, Canva, n8n, Zapier, Cursor, Python, APIs, GitHub, Railway
+Certifications: Google Data Analytics Professional, Vanderbilt Generative AI Automation
+Languages: Fluent Farsi; Conversational French; Basic Spanish
+Interests: Pickleball, Sports Analytics, Travel

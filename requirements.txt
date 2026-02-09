@@ -1,0 +1,10 @@
+anthropic
+beautifulsoup4
+httpx
+playwright
+rapidfuzz
+gspread
+google-auth
+google-auth-oauthlib
+python-dotenv
+pyyaml

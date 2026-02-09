@@ -1,0 +1,9 @@
+# Railway deployment config for job-finder
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "./entrypoint.sh"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
