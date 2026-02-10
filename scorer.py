@@ -61,6 +61,16 @@ SCORE 1-2 (Not a match):
 - Slipped through filters but clearly wrong
 - Example: "Senior VP of Operations, 10+ years required"
 
+SENIORITY PENALTY — Apply these automatic score caps based on title signals:
+- "VP", "Vice President", "Director", "Head of", "Principal", "Staff" → cap at 4/10 (too senior)
+- "Senior Manager", "Senior Director", "SVP", "EVP", "C-suite" → cap at 3/10 (way too senior)
+- "Senior" + any title (e.g. "Senior Analyst", "Senior Associate") → cap at 6/10 (likely 3-5 years required)
+- "Manager" alone (without "Senior") → no automatic cap, but note it may require 3+ years
+- "Lead" or "Founding" → no cap, evaluate based on full context
+- "Intern" → no cap but note if it's below the candidate's level
+
+Even if the job description doesn't explicitly state years of experience, use the title seniority as a strong signal. A "Director of Operations" almost certainly requires 7+ years even if unstated. Score accordingly.
+
 Here is the job listing:
 Title: {title}
 Company: {company}
@@ -76,6 +86,7 @@ Score the match from 1-10 based on:
 - Experience relevance (startup ops, VC, finance)
 - Responsibility match (automation, KPI tracking, financial modeling, working with founders)
 - Growth potential (will this role leverage the candidate's strengths?)
+- Seniority fit (is this realistic for someone with 0-2 years of experience?)
 - Company stage fit (early-stage/high-growth preference)
 - If the company is backed by a notable VC, add +0.5 to the score
 
