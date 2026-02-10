@@ -3,7 +3,7 @@ sheets.py — Google Sheets integration.
 Sheets is a VIEW of the SQLite database, not the source of truth.
 """
 
-import json
+import json as json_module
 from typing import Optional
 
 import gspread
@@ -40,9 +40,18 @@ def get_sheets_client() -> Optional[gspread.Spreadsheet]:
         return None
     
     try:
-        creds = Credentials.from_service_account_file(
-            GOOGLE_SERVICE_ACCOUNT_JSON, scopes=SCOPES
-        )
+        # Support both file path and JSON string (for Railway env vars)
+        if GOOGLE_SERVICE_ACCOUNT_JSON.strip().startswith("{"):
+            # It's a JSON string (Railway environment variable)
+            service_account_info = json_module.loads(GOOGLE_SERVICE_ACCOUNT_JSON)
+            creds = Credentials.from_service_account_info(
+                service_account_info, scopes=SCOPES
+            )
+        else:
+            # It's a file path (local development)
+            creds = Credentials.from_service_account_file(
+                GOOGLE_SERVICE_ACCOUNT_JSON, scopes=SCOPES
+            )
         gc = gspread.authorize(creds)
         spreadsheet = gc.open_by_key(GOOGLE_SHEETS_ID)
         return spreadsheet
@@ -174,7 +183,7 @@ def _safe_json_loads(value) -> list:
         return value
     if isinstance(value, str):
         try:
-            return json.loads(value)
-        except (json.JSONDecodeError, TypeError):
+            return json_module.loads(value)
+        except (json_module.JSONDecodeError, TypeError):
             return []
     return []
